@@ -1,0 +1,118 @@
+/* Variables de Colores */
+:root{
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --GrisOscuro: #666;
+    --GrisClaro: #ebebeb;
+    --Verde: #39b54a;
+}
+/* General */
+.main_header {
+    padding: 15px 0;
+    width: 100%;
+    background-color: var(--Amarillo);
+}
+body {
+    font-family: 'Roboto';
+    font-size: 12px;
+} 
+
+/* Busqueda */
+#busqueda {
+    align-items: center;
+    margin: 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Comprá en Cuotas y sin tarjeta de Creditow */
+.dolar {
+    align-items: center;
+    margin: 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#dolar {
+    align-items: center;
+    margin-right: 4px;
+}
+.compra {
+    display: inline;
+}
+
+/* Navegacion */
+.list {
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu_hamburguesa {
+    background-color: var(--Celeste);
+    color: #ffffff;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 15px;
+    display: block;
+    margin: 20px auto 0;
+}
+
+/* Titulares */
+.titulares {
+    font-size: 24px;
+}
+
+/* Products */
+.precio {
+    font-size: 18px;
+}
+.descuento {
+    font-size: 16px;
+}
+.descripcion {
+    font-size: 16px;
+}
+
+/* footer */
+.main_footer {
+    background-color: #ffffff;
+    padding: 20px 0;
+    margin-top: 80px;
+}
+.footer_data {
+    text-align: center;
+}
+#item {
+    color: var(--Celeste);
+    font-size: 3.5em;
+}
+#title {
+    color: var(--GrisOscuro);
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+#text {
+    color: var(--GrisOscuro);
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+/* Copyright */
+.Copyright {
+    border-top: 1px solid var(--GrisClaro);
+    background-color: #ffffff;
+}
+.Copyright h3 {
+    margin: 0;
+    color: var(--GrisOscuro);
+    padding: 15px 0;
+}
