@@ -7,6 +7,7 @@
     --GrisClaro: #ebebeb;
     --Verde: #39b54a;
 }
+
 /* General */
 .main_header {
     padding: 15px 0;
@@ -15,6 +16,10 @@
 }
 body {
     font-family: 'Roboto';
+    background-color: var(--GrisClaro);
+    font-size: 12px;
+    min-height: 100vh;
+    margin: 0;
     font-size: 12px;
 } 
 
@@ -45,13 +50,10 @@ body {
 
 /* Navegacion */
 .list {
-    list-style-image: none;
-    margin: 0;
-    padding: 0;
+    display: none;
 }
 a {
-    color: black;
-    text-decoration: none;
+    display: none;
 }
 
 .menu_hamburguesa {
@@ -71,14 +73,45 @@ a {
 }
 
 /* Products */
+.main_products {  
+    margin: 0px auto;
+    width: 90%;
+    color: var(--GrisOscuro);
+
+}
+.products {
+    background-color: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+.detail {
+    border-top: 2px solid var(--GrisClaro);
+}
+.icon_cart {
+    color: var(--Verde);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: solid 1px;
+    border-radius: 50%;
+    margin: 10px 0px 0px 10px;
+    right: 15px;
+    background-color: white;
+}
 .precio {
     font-size: 18px;
+    margin-left: 10px;
+    margin-bottom: 0px;
 }
 .descuento {
     font-size: 16px;
+    color: var(--Verde);
+    margin-left: 10px;
+    margin-top: 0px;
 }
 .descripcion {
-    font-size: 16px;
+    display: none;
 }
 
 /* footer */
@@ -112,7 +145,85 @@ a {
     background-color: #ffffff;
 }
 .Copyright h3 {
-    margin: 0;
+    margin-left: 10px;
     color: var(--GrisOscuro);
     padding: 15px 0;
+}
+
+/* Media-Queries */
+
+/* Tablet */
+@media (min-width: 768px) { /* Puse 738 como minimo por que en el Chrome asi lo muestra como tablet */
+    
+    /* Navegacion */
+    .list {
+        list-style-image: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+        display: inline;
+    }
+    .menu_hamburguesa {
+        background-color: var(--Celeste);
+        color: #ffffff;
+        font-size: 1.5em;
+        border: none;
+        border-radius: 4px;
+        padding: 5px 15px;
+        display: block;
+        margin: 20px auto 0;
+    }
+
+    
+    .products {
+        padding-bottom: 20px;
+    }
+    .descripcion {
+        display: inline;
+        font-size: 20px;
+        margin-left: 10px;
+
+    }
+}
+
+/* Laptop */
+@media (min-width: 1024px) { /* Puse 1024 como minimo por que en el Chrome asi lo muestra como Laptop. Igual no cambie nada a comparacion de la Tablet*/
+    
+    /* Navegacion */
+    .list {
+        list-style-image: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+        display: inline;
+    }
+    .menu_hamburguesa {
+        background-color: var(--Celeste);
+        color: #ffffff;
+        font-size: 1.5em;
+        border: none;
+        border-radius: 4px;
+        padding: 5px 15px;
+        display: block;
+        margin: 20px auto 0;
+    }
+
+    
+    .products {
+        padding-bottom: 20px;
+    }
+    .descripcion {
+        display: inline;
+        font-size: 20px;
+        margin-left: 10px;
+
+    }
 }
